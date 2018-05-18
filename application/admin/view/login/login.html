@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>简洁干净兼容IE6的后台管理系统模版JsAdmin</title>
+    <link href="__admin__/style.css" rel="stylesheet" media="all" />
+    <link href="" rel="stylesheet" title="style" media="all" />
+    <script type="text/javascript" src="__admin__/js/jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="__admin__/js/superfish.js"></script>
+    <script type="text/javascript" src="__admin__/js/jquery-ui-1.7.2.js"></script>
+    <script type="text/javascript" src="__admin__/js/tooltip.js"></script>
+    <script type="text/javascript" src="__admin__/js/tablesorter.js"></script>
+    <script type="text/javascript" src="__admin__/js/tablesorter-pager.js"></script>
+    <script type="text/javascript" src="__admin__/js/cookie.js"></script>
+    <script type="text/javascript" src="__admin__/js/custom.js"></script>
+    <!--[if IE 6]>
+    <link href="__admin__/css/ie6.css" rel="stylesheet" media="all" />
+
+    <script src="__admin__/js/pngfix.js"></script>
+    <script>
+        /* EXAMPLE */
+        DD_belatedPNG.fix('.logo, .other ul#dashboard-buttons li a');
+
+    </script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link href="__admin__/css/ie7.css" rel="stylesheet" media="all" />
+    <![endif]-->
+</head>
+<body>
+<div class="button float-float">
+    <a href="#" id="login_dialog" class="btn ui-state-default ui-corner-all"><span class="ui-icon ui-icon-image"></span>登录框</a>
+</div>
+<div id="login" title="Members Login">
+    <form action="../login/login" method="post" enctype="multipart/form-data" class="forms" name="form">
+        <ul>
+            <li>
+                <label for="usename" class="desc">
+                    账号:
+                </label>
+                <div>
+                    <input type="text" tabindex="1" maxlength="255" value="" class="field text full" name="usename" id="usename" />
+                </div>
+            </li>
+            <li>
+                <label for="password" class="desc">
+                    密码:
+                </label>
+                <div>
+                    <input type="text" tabindex="1" maxlength="255" value="" class="field text full" name="password" id="password" />
+                </div>
+            </li>
+            <input type="submit" href="#" class="btn ui-state-default ui-corner-all" value="确认登录" />
+        </ul>
+    </form>
+</div>
+</body>
+</html>
